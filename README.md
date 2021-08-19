@@ -75,7 +75,7 @@
 
 ![image](https://user-images.githubusercontent.com/87966919/130034700-d0676c33-16c3-4a7b-bcd3-0462ad3b0380.png)
 
-In the Scheduled Processes tab, you can search and check statuses of the scheduled processes. 
+* ### In the Scheduled Processes tab, you can search and check statuses of the scheduled processes. 
 ![image](https://user-images.githubusercontent.com/87966919/130034732-95436a38-6074-4fe0-a928-15e59c3f5e09.png)
 
 * ### By clicking Instances icon on a row, you can go to the instance of a scheduled process to see run details.  
