@@ -49,7 +49,8 @@
 ![image](https://user-images.githubusercontent.com/87966919/130034362-6cb04634-fd27-48da-a64d-e8044e1ef489.png)
     </div>
 <br />
-  * ### After you validated the process flow, save the model by clicking save ( ![image](https://user-images.githubusercontent.com/87966919/130034390-5c30a0f9-028a-408d-b099-056254352df1.png) ) button. 
+
+* ### After you validated the process flow, save the model by clicking save ( ![image](https://user-images.githubusercontent.com/87966919/130034390-5c30a0f9-028a-408d-b099-056254352df1.png) ) button. 
 
 <div align="center">
 
