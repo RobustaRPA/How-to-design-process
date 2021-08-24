@@ -119,8 +119,6 @@
 ![image](https://user-images.githubusercontent.com/87966919/130034700-d0676c33-16c3-4a7b-bcd3-0462ad3b0380.png)
     </div>
 <br />
-<div align="center">
-
 * ### In the Scheduled Processes tab, you can search and check statuses of the scheduled processes. 
 <div align="center">
 
