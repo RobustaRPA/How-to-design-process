@@ -86,6 +86,8 @@
 <div align="center">
 
 ![image](https://user-images.githubusercontent.com/87966919/130034548-98b64ed5-03c4-4305-9604-2e7d766fee36.png)
+    </div>
+<br />
 
 * ### To run the process, go back to Processes tab and select your process.
 <div align="center">
