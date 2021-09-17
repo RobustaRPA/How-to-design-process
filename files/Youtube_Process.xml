@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:flowable="http://flowable.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://flowable.org/test">
+  <process id="YoutubeProcess" name="Youtube Process" isExecutable="true">
+    <dataObject id="minBpPriority" name="minBpPriority" itemSubjectRef="xsd:string">
+      <extensionElements>
+        <flowable:value>50</flowable:value>
+      </extensionElements>
+    </dataObject>
+    <dataObject id="humanEffort" name="humanEffort" itemSubjectRef="xsd:string">
+      <extensionElements>
+        <flowable:value>0</flowable:value>
+      </extensionElements>
+    </dataObject>
+    <startEvent id="startEvent1" flowable:formFieldValidation="true"></startEvent>
+    <serviceTask id="sid-BDEAED06-4A7A-4F3D-AAA1-522C6F4D6EE2" name="Open : Youtube" flowable:async="true" flowable:exclusive="false" flowable:class="com.robusta.robot.web.WebOpenTask" flowable:type="CustomWebOpen">
+      <extensionElements>
+        <flowable:field name="resultbrowser">
+          <flowable:string><![CDATA[openYoutube]]></flowable:string>
+        </flowable:field>
+        <flowable:field name="type">
+          <flowable:string><![CDATA[CHROME]]></flowable:string>
+        </flowable:field>
+        <flowable:field name="url">
+          <flowable:string><![CDATA[https://www.youtube.com/]]></flowable:string>
+        </flowable:field>
+        <flowable:field name="pageload">
+          <flowable:string><![CDATA[true]]></flowable:string>
+        </flowable:field>
+        <flowable:field name="maximize">
+          <flowable:string><![CDATA[true]]></flowable:string>
+        </flowable:field>
+      </extensionElements>
+    </serviceTask>
+    <intermediateCatchEvent id="sid-4194F7D8-3163-47B4-A6CF-5D52611D2B00">
+      <timerEventDefinition>
+        <timeDuration>PT5S</timeDuration>
+      </timerEventDefinition>
+    </intermediateCatchEvent>
+    <serviceTask id="sid-A6895F6A-B701-4186-B650-3E17804B1F1A" name="Close" flowable:async="true" flowable:exclusive="false" flowable:class="com.robusta.robot.web.WebCloseTask" flowable:type="CustomWebClose">
+      <extensionElements>
+        <flowable:field name="browserId">
+          <flowable:expression><![CDATA[${openYoutube}]]></flowable:expression>
+        </flowable:field>
+      </extensionElements>
+    </serviceTask>
+    <endEvent id="sid-1B41D690-0050-4670-8C40-1143A157182C"></endEvent>
+    <sequenceFlow id="sid-0F74ADC1-C538-4F05-BC31-090450B180F5" sourceRef="startEvent1" targetRef="sid-BDEAED06-4A7A-4F3D-AAA1-522C6F4D6EE2"></sequenceFlow>
+    <sequenceFlow id="sid-D3EC8B7F-D7F4-4084-947B-7EAD88AB542C" sourceRef="sid-BDEAED06-4A7A-4F3D-AAA1-522C6F4D6EE2" targetRef="sid-4194F7D8-3163-47B4-A6CF-5D52611D2B00"></sequenceFlow>
+    <sequenceFlow id="sid-5E484A20-51A9-479C-8067-F106982DBB6B" sourceRef="sid-4194F7D8-3163-47B4-A6CF-5D52611D2B00" targetRef="sid-A6895F6A-B701-4186-B650-3E17804B1F1A"></sequenceFlow>
+    <sequenceFlow id="sid-EC2DB917-1F99-4076-9897-51F0A40840D1" sourceRef="sid-A6895F6A-B701-4186-B650-3E17804B1F1A" targetRef="sid-1B41D690-0050-4670-8C40-1143A157182C"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_YoutubeProcess">
+    <bpmndi:BPMNPlane bpmnElement="YoutubeProcess" id="BPMNPlane_YoutubeProcess">
+      <bpmndi:BPMNShape bpmnElement="startEvent1" id="BPMNShape_startEvent1">
+        <omgdc:Bounds height="30.0" width="30.0" x="495.0" y="261.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-BDEAED06-4A7A-4F3D-AAA1-522C6F4D6EE2" id="BPMNShape_sid-BDEAED06-4A7A-4F3D-AAA1-522C6F4D6EE2">
+        <omgdc:Bounds height="80.0" width="100.0" x="585.0" y="236.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-4194F7D8-3163-47B4-A6CF-5D52611D2B00" id="BPMNShape_sid-4194F7D8-3163-47B4-A6CF-5D52611D2B00">
+        <omgdc:Bounds height="31.0" width="31.0" x="750.0" y="150.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-A6895F6A-B701-4186-B650-3E17804B1F1A" id="BPMNShape_sid-A6895F6A-B701-4186-B650-3E17804B1F1A">
+        <omgdc:Bounds height="80.0" width="100.0" x="840.0" y="238.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-1B41D690-0050-4670-8C40-1143A157182C" id="BPMNShape_sid-1B41D690-0050-4670-8C40-1143A157182C">
+        <omgdc:Bounds height="28.0" width="28.0" x="1043.0" y="264.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="sid-D3EC8B7F-D7F4-4084-947B-7EAD88AB542C" id="BPMNEdge_sid-D3EC8B7F-D7F4-4084-947B-7EAD88AB542C">
+        <omgdi:waypoint x="682.1807692307692" y="236.0"></omgdi:waypoint>
+        <omgdi:waypoint x="753.6707042986814" y="175.48406592704495"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-EC2DB917-1F99-4076-9897-51F0A40840D1" id="BPMNEdge_sid-EC2DB917-1F99-4076-9897-51F0A40840D1">
+        <omgdi:waypoint x="939.9499999999143" y="278.0"></omgdi:waypoint>
+        <omgdi:waypoint x="1043.0" y="278.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-5E484A20-51A9-479C-8067-F106982DBB6B" id="BPMNEdge_sid-5E484A20-51A9-479C-8067-F106982DBB6B">
+        <omgdi:waypoint x="776.9631394579088" y="175.8584580611139"></omgdi:waypoint>
+        <omgdi:waypoint x="845.7298978231896" y="238.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-0F74ADC1-C538-4F05-BC31-090450B180F5" id="BPMNEdge_sid-0F74ADC1-C538-4F05-BC31-090450B180F5">
+        <omgdi:waypoint x="524.9499988304931" y="276.0"></omgdi:waypoint>
+        <omgdi:waypoint x="585.0" y="276.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
