@@ -6,8 +6,15 @@ ___
 
 <div align="center">
 
-[![Modeler](/files/ebae758e31f0e0b0f452363c1f421e90-0.jpg)](https://178.18.207.85:8443/modeler/)
-  
+![](/files/ebae758e31f0e0b0f452363c1f421e90-00.jpg)
+
+•	You can log into Modeler (Design Studio) by clicking on the link below. 
+[Modeler](https://178.18.207.85:8443/modeler/)
+
+•	You can log into Scheduler by clicking on the link below. 
+[Scheduler](https://178.18.207.85:8443/scheduler/)
+
+![](/files/ebae758e31f0e0b0f452363c1f421e90-01.jpg) 
    </div>
 
 ___
