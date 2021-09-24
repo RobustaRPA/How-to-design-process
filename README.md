@@ -75,7 +75,11 @@ ___
 
 ___
 
-[![Modeler](/files/ebae758e31f0e0b0f452363c1f421e90-15.jpg)](https://178.18.207.85:8443/modeler/)
+<div align="center">
+
+   ![](/files/ebae758e31f0e0b0f452363c1f421e90-15.jpg)
+   
+   </div>
 
 ___
 
