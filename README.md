@@ -1,4 +1,12 @@
 ﻿
+ <div align="center">
+
+[![](/files/ebae758e31f0e0b0f452363c1f421e90-00.jpg)](#)
+
+
+   </div>
+
+___
 
 [![](/files/community_edition.jpeg)](#)
 
@@ -14,16 +22,6 @@ ___
  
  
 [![Introduction to Robusta](/files/video_ss.jpg)](https://www.youtube.com/watch?v=WYsYpFerF1g)
-
-___
-
-
-<div align="center">
-
-[![](/files/ebae758e31f0e0b0f452363c1f421e90-00.jpg)](#)
-
-
-   </div>
 
 ___
 
