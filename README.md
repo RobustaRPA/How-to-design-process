@@ -13,7 +13,7 @@ ___
 
 #### You can access the following fields with the username and password that provided to you.
 #### * Modeler(Design Studio) : Robusta design studio is the main component in which business process are trained to robots.It offers process design with no code approach.
-#### * Scheduler : With scheduler you can manage robots time based, prioritize processes among robots. 
+#### * Scheduler : With scheduler you can manage robots time based and prioritize processes among them. 
  
 
 [Community Edition Modeler(Design Studio) and Scheduler](https://community.robusta.ai:8443/)
