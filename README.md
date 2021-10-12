@@ -1,32 +1,35 @@
 ﻿
- <div align="center">
-
-[![](/files/ebae758e31f0e0b0f452363c1f421e90-00.jpg)](#)
-
-#### You can also download Introduction to Process Design .pdf [here](/files/Introduction_to_sample_process_design.pdf)
-
-   </div>
-
+## Welcome to Robusta RPA Community Edition  
+#### You can follow the video below to understand how an automation process is designed with Robusta RPA tool. You can also find the document [here.](/files/Introduction_to_sample_process_design.pdf)
 ___
 
 
 
-### * Modeler (Design Studio) 
-#### You can access the Robusta RPA Design Studio which is a part of Robusta Orchestrator from [here](https://community.robusta.ai:8443/).
+###  Modeler (Design Studio) 
+#### You can access the Robusta RPA Design Studio which is a part of Robusta Orchestrator from [here](https://cloud.robusta.ai).
 
-### * Scheduler  
-#### You can access the Robusta Scheduler Module to monitor your process runs.
-link is here 
+###  Scheduler  
+#### You can access the Robusta Scheduler Module [here](https://cloud.robusta.ai:8443/scheduler/#/) to monitor your process runs.
  
  
 
-[Community Edition Modeler(Design Studio) and Scheduler](https://community.robusta.ai:8443/)
 
 ___
 
  
  
 [![Introduction to Robusta](/files/video_ss.jpg)](https://www.youtube.com/watch?v=WYsYpFerF1g)
+
+___
+
+<div align="center">
+
+[![](/files/ebae758e31f0e0b0f452363c1f421e90-00.jpg)](#)
+
+
+
+   </div>
+
 
 ___
 
