@@ -9,11 +9,11 @@
 
 ___
 
-[![](/files/community_edition.jpeg)](#)
+
 
 ### * Modeler (Design Studio) 
-#### You can access the Robusta RPA Design Studio Which is a part of Robusta Orchestrator.
-link is here 
+#### You can access the Robusta RPA Design Studio which is a part of Robusta Orchestrator from [here](https://community.robusta.ai:8443/).
+
 ### * Scheduler  
 #### You can access the Robusta Scheduler Module to monitor your process runs.
 link is here 
